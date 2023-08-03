@@ -15,6 +15,7 @@
 	<description>Playground for AWS and spring cloud</description>
 	<properties>
 		<java.version>17</java.version>
+		<spring-cloud-version>3.0.1</spring-cloud-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -32,11 +33,18 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+
 		<dependency>
 			<groupId>io.awspring.cloud</groupId>
 			<artifactId>spring-cloud-aws-starter-sqs</artifactId>
-			<version>3.0.1</version>
+			<version>${spring-cloud-version}</version>
 		</dependency>
+		<dependency>
+			<groupId>io.awspring.cloud</groupId>
+			<artifactId>spring-cloud-aws-starter-s3</artifactId>
+			<version>${spring-cloud-version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
